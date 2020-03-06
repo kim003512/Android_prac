@@ -13,6 +13,6 @@ class SignInActivity : AppCompatActivity() {
     }
 
     private fun initialUI(){
-
+        //https://reqres.in/ 서버 연결
     }
 }
