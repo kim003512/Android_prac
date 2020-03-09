@@ -10,6 +10,13 @@ class SignUpActivity : AppCompatActivity() {
         setContentView(R.layout.activity_signup)
 
         //유효성 검사
+        //val edit_email =
+
+        //이메일
+
+        //비밀번호
+
+        //닉네임?
     }
 
 }
