@@ -1,6 +1,7 @@
 package com.example.android_prac
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_signin.*
 import kotlinx.android.synthetic.main.activity_signin.et_id
@@ -21,12 +22,11 @@ class SignUpActivity : AppCompatActivity() {
         var edt_phone = et_phone.text
 
         //아이디, 비밀번호, 이름, 번호
-
-        //비밀번호
-
-        //이름
-
-        //ㅂ먼호
+        btn_signup_signup.setOnClickListener{
+            if(edt_id.isEmpty() || edt_pw.isEmpty() || edt_name.isEmpty() || edt_phone.isEmpty()){
+                Toast.makeText(this, "빈칸을 모두 입력해주세요!", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 
 }
