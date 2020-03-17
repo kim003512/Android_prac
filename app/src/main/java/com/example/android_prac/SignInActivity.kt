@@ -33,5 +33,7 @@ class SignInActivity : AppCompatActivity() {
             else
                 startActivity(main_intent)
         }
+
+        //signUp에서 돌아왔을때 id와 pw를 그대로 가지고 있도록
     }
 }

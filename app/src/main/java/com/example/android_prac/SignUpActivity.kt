@@ -1,5 +1,6 @@
 package com.example.android_prac
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -21,10 +22,17 @@ class SignUpActivity : AppCompatActivity() {
         var edt_name = et_name.text
         var edt_phone = et_phone.text
 
+        val intent = Intent(this, SignInActivity::class.java)
+
         //아이디, 비밀번호, 이름, 번호
         btn_signup_signup.setOnClickListener{
             if(edt_id.isEmpty() || edt_pw.isEmpty() || edt_name.isEmpty() || edt_phone.isEmpty()){
                 Toast.makeText(this, "빈칸을 모두 입력해주세요!", Toast.LENGTH_SHORT).show()
+            }
+            else{
+                intent.putExtra("id", edt_id)
+                intent.putExtra("pw", edt_pw)
+                startActivity(intent)
             }
         }
     }
