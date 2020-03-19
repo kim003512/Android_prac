@@ -17,10 +17,10 @@ class SignUpActivity : AppCompatActivity() {
 
         //유효성 검사
         //val edit_email =
-        var edt_id = et_id.text
-        var edt_pw = et_pw.text
-        var edt_name = et_name.text
-        var edt_phone = et_phone.text
+        var edt_id = et_id.text.toString()
+        var edt_pw = et_pw.text.toString()
+        var edt_name = et_name.text.toString()
+        var edt_phone = et_phone.text.toString()
 
         val intent = Intent(this, SignInActivity::class.java)
 
