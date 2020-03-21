@@ -1,10 +1,10 @@
-package com.example.android_prac
+package com.example.android_prac.Sign
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_signin.*
+import com.example.android_prac.R
 import kotlinx.android.synthetic.main.activity_signin.et_id
 import kotlinx.android.synthetic.main.activity_signin.et_pw
 import kotlinx.android.synthetic.main.activity_signup.*
