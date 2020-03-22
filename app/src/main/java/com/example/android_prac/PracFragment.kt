@@ -17,8 +17,17 @@ class PracFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_prac, container, false)
+        val view = inflater.inflate(R.layout.fragment_prac, container, false)
+
+
+
+        return view
     }
+
+//    override fun onCreate(savedInstanceState: Bundle?){
+//        super.onCreate(savedInstanceState)
+//        setContentView(R.layout.activity_main)
+//    }
 
 
 }
