@@ -26,7 +26,6 @@ class MainActivity : AppCompatActivity() {
             val callIntent = Intent(Intent.ACTION_VIEW, Uri.parse(call))
             startActivity(callIntent)
         }
-        
 
     }
 }
