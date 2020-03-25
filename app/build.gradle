@@ -4,6 +4,10 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'com.android.application'
+
+apply plugin: 'com.google.gms.google-services'
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
@@ -58,11 +62,17 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics:17.2.0'
     implementation 'com.google.firebase:firebase-database:19.2.0'
 
-    //FCM관련 SDK설정
-    implementation 'com.google.firebase:firebase-messaging:20.0.0'
+//    //FCM관련 SDK설정
+//    implementation 'com.google.firebase:firebase-messaging:20.0.0'
+//    implementation 'com.sendbird.sdk:sendbird-android-sdk:3.0.112'
 
-    implementation 'com.sendbird.sdk:sendbird-android-sdk:3.0.112'
+    //FCM
+    implementation 'com.google.firebase:firebase-analytics:17.2.2'
+
 
     //lottie를 쓰기 위한 라이브러리
     implementation 'com.airbnb.android:lottie:3.3.1'
 }
+
+
+
