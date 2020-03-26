@@ -21,6 +21,7 @@ class SignInActivity : AppCompatActivity() {
         var edt_id = et_id.text.toString()
         var edt_pw = et_pw.text.toString()
 
+
         var main_intent = Intent(this, MainActivity::class.java)
         //https://reqres.in/ 서버 연결
         btn_signup.setOnClickListener {
