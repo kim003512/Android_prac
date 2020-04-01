@@ -14,7 +14,7 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/signUpButton"/>
+            android:src="@drawable/arrow"/>
         <TextView
             android:layout_width="231dp"
             android:layout_height="54dp"
