@@ -24,20 +24,25 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textSize="33.3sp"
+            android:textSize="33sp"
             android:textColor="#282828"
             android:text="분양 추천"
             app:layout_constraintLeft_toRightOf="@+id/btn_recommand_back"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
             android:layout_marginLeft="91dp"/>
+            <!--android:layout_marginRight="140dp"!-->
+
     </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_recommand"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="24dp"
         android:layout_marginLeft="23dp"
         android:layout_marginRight="20dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/const_recommand"/>
