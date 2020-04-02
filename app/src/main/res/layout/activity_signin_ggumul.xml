@@ -51,8 +51,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="102dp"
         android:background="@drawable/sign_up_finish_button"
+        android:layout_marginRight="22dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/const_signin" />
+        app:layout_constraintTop_toBottomOf="@id/const_signin"
+        app:layout_constraintBottom_toBottomOf="@+id/img_profile"
+        android:layout_marginBottom="8.7dp"/>
 
     <EditText
         android:id="@+id/edt_signin_name"
