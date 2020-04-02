@@ -10,11 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".RecommandActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <!-- <service android:name="com.example.MyFirebaseMessagingService"> -->
         <!-- <intent-filter> -->
@@ -27,7 +22,13 @@
         <activity android:name=".FrameActivity">
 
         </activity>
-        <activity android:name=".SignInActivity_ggumul" />
+        <activity android:name=".SignInActivity_ggumul">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
