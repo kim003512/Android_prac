@@ -47,6 +47,7 @@
         app:layout_constraintTop_toBottomOf="@id/const_signin" />
 
     <ImageButton
+        android:id="@+id/btn_signin_finish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="102dp"

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RecommandActivity">
+    tools:context=".RecommandActivity"
+    android:background="#ffffff">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/const_recommand"
         android:layout_width="0dp"

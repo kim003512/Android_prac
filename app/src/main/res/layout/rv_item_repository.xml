@@ -1,139 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@drawable/rv_dot_custom">
-
-    <ImageView
-        android:id="@+id/rv_img"
-        android:layout_width="161dp"
-        android:layout_height="167dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="7dp"
-        android:layout_marginRight="7dp"
-        android:src="@drawable/tae"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/rv_txt_kind"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="14dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginRight="110dp"
-        android:text="말티즈"
-        android:textColor="#282828"
-        android:textSize="18.3sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rv_img" />
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="2dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/const_1"
-        android:layout_width="0dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="14dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginRight="24dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/rv_txt_kind">
+        android:background="@drawable/dot_box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/rv_img"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            android:src="@drawable/dog_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/rv_txt_kind"/>
+
+        <TextView
+            android:id="@+id/rv_txt_kind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:text="말티즈"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rv_img" />
 
         <TextView
             android:id="@+id/age"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:text="나이 : "
-            android:textColor="#282828"
-            android:textSize="11.7sp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textSize="10dp"
+            app:layout_constraintStart_toStartOf="@id/rv_txt_kind"
+            app:layout_constraintTop_toBottomOf="@id/rv_txt_kind" />
 
         <TextView
             android:id="@+id/rv_txt_age"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3"
-            android:textColor="#282828"
-            android:textSize="11.7sp"
-            app:layout_constraintLeft_toRightOf="@id/age"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textSize="10dp"
+            app:layout_constraintStart_toEndOf="@id/age"
+            app:layout_constraintTop_toTopOf="@id/age" />
 
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="살 추정"
-            android:textColor="#282828"
-            android:textSize="11.7sp"
-            app:layout_constraintLeft_toRightOf="@id/rv_txt_age"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/const_2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="14dp"
-        android:layout_marginRight="24dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/const_1">
+            android:textSize="10dp"
+            app:layout_constraintStart_toEndOf="@id/rv_txt_age"
+            app:layout_constraintTop_toTopOf="@id/rv_txt_age" />
 
         <TextView
             android:id="@+id/charac"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:text="특징 : "
-            android:textColor="#282828"
-            android:textSize="11.7sp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textSize="10dp"
+            app:layout_constraintStart_toStartOf="@id/age"
+            app:layout_constraintTop_toBottomOf="@id/age" />
 
         <TextView
             android:id="@+id/rv_txt_charac"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="치석이 있으며 ~"
-            android:textColor="#282828"
-            android:textSize="11.7sp"
-            app:layout_constraintLeft_toRightOf="@+id/charac"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="14dp"
-        android:layout_marginRight="24dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/const_2">
+            android:text="치석있으며 건강함."
+            android:textSize="10dp"
+            app:layout_constraintStart_toEndOf="@id/charac"
+            app:layout_constraintTop_toTopOf="@id/charac" />
 
         <TextView
             android:id="@+id/place"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:text="보호 장소 : "
-            android:textColor="#282828"
-            android:textSize="11.7sp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textSize="10dp"
+            app:layout_constraintStart_toStartOf="@id/charac"
+            app:layout_constraintTop_toBottomOf="@id/charac" />
 
         <TextView
             android:id="@+id/rv_txt_place"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="인천시 연수구 "
-            android:textColor="#282828"
-            android:textSize="11.7sp"
-            app:layout_constraintLeft_toRightOf="@id/place"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_marginBottom="10dp"
+            android:text="서울시 양천구"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/place"
+            app:layout_constraintTop_toTopOf="@id/place" />
 
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
