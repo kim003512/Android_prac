@@ -20,9 +20,11 @@ class SignInActivity_ggumul : AppCompatActivity(){
         btn_signin_finish.setOnClickListener {
             if(name.isEmpty() || id.isEmpty() || pw.isEmpty() || birth.isEmpty()){
                 Toast.makeText(this, "빈칸을 입력하세요!", Toast.LENGTH_SHORT).show()
+            }else {
+                val intent_recommand = Intent(this, RecommandActivity::class.java)
+                startActivity(intent_recommand)
             }
-            val intent_recommand = Intent(this, RecommandActivity::class.java)
-            startActivity(intent_recommand)
+
         }
     }
 }
