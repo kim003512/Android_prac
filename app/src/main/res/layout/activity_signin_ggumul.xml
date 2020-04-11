@@ -40,7 +40,7 @@
     <ImageButton
         android:id="@+id/img_profile"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:background="@drawable/sign_up_image"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
