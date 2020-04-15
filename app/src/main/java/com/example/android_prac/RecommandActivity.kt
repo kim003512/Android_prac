@@ -29,7 +29,7 @@ class RecommandActivity : AppCompatActivity() {
         rvDogRepo.adapter= dogRecyclerViewAdapter
 
         //viewHolder들이 어떻게 배치될지 설정
-        rvDogRepo.layoutManager = GridLayoutManager(this,2)
+        rvDogRepo.layoutManager = GridLayoutManager(this,2) as RecyclerView.LayoutManager?
 
 
         dataList.add(DogData("말티즈", 3, "치석이 있으며 건강", "서울시 용산구"))

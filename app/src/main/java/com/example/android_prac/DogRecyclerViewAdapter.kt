@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 
 class DogRecyclerViewAdapter(val ctx: Context, val dataList: ArrayList<DogData>) :
@@ -23,6 +25,10 @@ class DogRecyclerViewAdapter(val ctx: Context, val dataList: ArrayList<DogData>)
         holder.age.text = dataList[position].age.toString()
         holder.character.text = dataList[position].character
         holder.place.text = dataList[position].place
+
+        holder.item_btn.setOnClickListener {
+            //ctx.startActivity<MainActivity>()
+        }
     }
 
     inner class Holder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -30,6 +36,8 @@ class DogRecyclerViewAdapter(val ctx: Context, val dataList: ArrayList<DogData>)
         val age: TextView = itemView.findViewById(R.id.rv_txt_age) as TextView
         val character: TextView = itemView.findViewById(R.id.rv_txt_charac) as TextView
         val place: TextView = itemView.findViewById(R.id.rv_txt_place) as TextView
+
+        val item_btn : ConstraintLayout = itemView.findViewById(R.id.btn_rv_item) as ConstraintLayout
     }
 
 }
