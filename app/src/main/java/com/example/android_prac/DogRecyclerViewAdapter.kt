@@ -28,6 +28,7 @@ class DogRecyclerViewAdapter(val ctx: Context, val dataList: ArrayList<DogData>)
 
         holder.item_btn.setOnClickListener {
             //ctx.startActivity<MainActivity>()
+            //Toast.makeText(this, "~", Toast.LENGTH_SHORT).show()
         }
     }
 
